@@ -3,10 +3,12 @@
 ## Setup
 
 ```
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate
+pip install .
 ```
 
 ## How to run
 ```
-python -m youtube_audio extract <youtube URL>
+youtube_audio extract <youtube URL>
 ```

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube_audio"
+version = "0.1.0"
+description = "Download the audio of youtube videos as mp3's"
+readme = "README.md"
+authors = [{ name = "Chris Adkins", email = "chris@cjadkins.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "typer >= 0.12.3",
+    "yt-dlp >= 2024.4.9",
+]
+
+[project.scripts]
+youtube_audio = "youtube_audio.__main__:app"
+
+[tool.setuptools]
+packages = ["youtube_audio"]
+package-dir = {"" = "."}
+
+
